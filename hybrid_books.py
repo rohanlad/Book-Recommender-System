@@ -1,7 +1,6 @@
 # *********************
 # CITATIONS
 # *********************
-# A lot of this code is adapted from the Tensorflow guides & tutorials. 
 # https://www.tensorflow.org/recommenders/examples/basic_retrieval
 # https://www.tensorflow.org/recommenders/examples/basic_ranking
 # https://www.tensorflow.org/recommenders/examples/featurization
@@ -266,9 +265,7 @@ def rank(train, test):
   model_rank = RankingMain()
   model_rank.compile(optimizer=tf.keras.optimizers.Adagrad(learning_rate=0.01))
   model_rank.fit(train.batch(8192), epochs=100)
-  print('----------------------hybrideval')
   print(model_rank.evaluate(test.batch(8192), return_dict=True))
-  print('----------------------hybrideval')
   model_rank.save_weights('hybrid_save_rank/')
   return
 
