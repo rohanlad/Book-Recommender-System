@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # Note that this function is not currently called anywhere. It shows what we have done to process the raw dataset into
-# the cleaned_book_ratings.csv dataset that is included in the submission. So if someone wanted to replicate that process,
+# the cleaned_book_ratings.csv dataset that is stored in the repository. So if someone wanted to replicate that process,
 # they would need to call this function with the raw dataset files in the current directory. Also note that this is just 
 # the initial data processing and further processing is done in the respective files
 def read_in_data():
